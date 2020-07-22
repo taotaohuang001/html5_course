@@ -1,0 +1,94 @@
+body{
+  font-family: Helvetica;
+  text-align: justify;
+  position:relative;
+}
+
+/* Our menu position */
+body>h1{
+  text-align: center;
+}
+
+/* Container setting */
+section {
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  background-color: gray;
+  margin: 10px;
+  height:250px;
+}
+
+/* Tag position */
+section>h1{
+  position: absolute;
+  top:0px;
+  right:0px;
+  box-sizing:border-box;
+  width:150px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align:center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tag1{
+  background-color: pink;
+  color:white;
+}
+
+.tag2{
+  background-color: yellow;
+  color:blue;
+}
+
+.tag3{
+  background-color: white;
+  color:red;
+}
+
+
+/* Text position in container */
+section>h2{
+  margin:10px;
+  margin-top:30px;
+  font-size: 20px;
+}
+
+/* Desktop view*/
+@media(min-width: 992px){
+  .col-lg-3 {
+    width: 30%
+  }
+  /* .col-md-12 {
+    position: absolute;
+    right:0px
+  } */
+
+}
+
+
+/* Tablet view*/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-6 {
+    width: 47%;
+  }
+  .col-md-12 {
+    width: auto;
+    height:auto;
+  }
+  .to-right{
+    position: absolute;
+    right:0px
+  }
+}
+
+/* MOBILE view*/
+@media(max-width: 767px){
+  .col-sx-12 {
+    width: auto;
+    height:auto;
+  }
+}
