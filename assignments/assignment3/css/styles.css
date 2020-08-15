@@ -103,6 +103,11 @@ body {
   .col-lg-3 {
       width: 33%
     }
+
+    .col-sx-12 {
+      width: auto;
+      height:auto;
+    }
 }
 
 /********** Medium devices only **********/
@@ -116,6 +121,11 @@ body {
     width: 50%;
   }
   .col-md-12 {
+    width: auto;
+    height:auto;
+  }
+
+  .col-sx-12 {
     width: auto;
     height:auto;
   }
